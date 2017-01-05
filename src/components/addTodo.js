@@ -1,9 +1,6 @@
 import React, {Component, PropTypes} from 'react'
 
 class Todo extends Component {
-	static propTypes = {
-		addTodo: PropTypes.func.isRequired
-	}
 
 	addTodoClcik() {
 		let value = this.refs.todoInput.value
@@ -21,6 +18,10 @@ class Todo extends Component {
 			</div>
 		)
 	}
+}
+
+Todo.propTypes = {
+	addTodo: PropTypes.func.isRequired
 }
 
 export default Todo

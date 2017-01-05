@@ -2,17 +2,9 @@ import {connect} from 'react-redux'
 import AddTodo from '../components/addTodo'
 import {addTodoAction} from '../actions/addTodoAction'
 
-function mapStateToProps() {
-	return {
+const mapStateToProps = () => ({})
 
-	}
-}
-
-function mapDispatchToProps(dispatch) {
-	return {
-		addTodo: (text) => dispatch(addTodoAction(text))
-	}
-}
+var mapDispatchToProps = (dispatch) => ({addTodo: (text) => dispatch(addTodoAction(text))})
 
 const todo = connect(
 	mapStateToProps,

@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
 import addTodo from './addTodo'
 
-var reducers = combineReducers({
+const reducers = combineReducers({
 	addTodo
 })
 
